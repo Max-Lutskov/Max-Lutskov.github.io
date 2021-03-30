@@ -1,0 +1,268 @@
+@import "nullstyle";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+body{
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+.container{
+  max-width: 1130px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+
+
+.header{
+
+
+  &__bg-line{
+    background-color:rgba(20, 20, 20, 0.8);
+  }
+
+  .header__bg{
+    background:  url('../../img/library-bg.png') center/cover no-repeat;
+    margin: 0 auto;
+  }
+
+  &__menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px ;
+    margin-bottom: 5px;
+
+  }
+
+  &__list{
+    display: flex;
+    align-items: center;
+
+    li{
+      padding: 0 0 0 50px ;
+    }
+
+    a{
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+
+    img{
+      transform: scale(0.7);
+    }
+
+  }
+
+  &__logo{
+
+    h2{
+
+      span{
+        font-weight: 700;
+      }
+
+      font-family: 'Oswald', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 47px;
+      color: #FFFFFF;
+    }
+  }
+
+
+
+}
+
+.contact{
+
+
+
+  &__logo {
+    font-family: Oswald, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #000000;
+    border-bottom: 1px solid #869791;
+    padding-left: 30px;
+  }
+
+  &__card {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 55px;
+
+
+  }
+
+
+  .card-contact {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+
+    &__text {
+      font-family: Oswald, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .card-contact__container-2 {
+      background-color: #ff5c33;
+      padding: 20px;
+      border-radius: 30px;
+    }
+
+    img {
+      margin-right: 15px;
+      margin-top: -10px;
+    }
+
+    &__title {
+      font-family: Oswald, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 20px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    &__graph-loc {
+      font-family: Oswald, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 20px;
+
+      max-width: 300px;
+    }
+
+    &__time {
+      font-family: Oswald, sans-serif;
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 20px;
+
+
+    }
+
+    &__director {
+      font-family: Oswald, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 20px;
+      text-align: center;
+
+    }
+
+    .icon-calendar:before {
+      content: url("../../img/icon/calendar.svg");
+      margin-right: 15px;
+
+    }
+
+    .location:before {
+      content: url("../../img/icon/location2.svg");
+      margin-right: 15px;
+    }
+
+    .title1:before {
+      content: '';
+      background: url("../../img/icon/Clock.svg") center/cover no-repeat;
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+      margin-right: 10px;
+
+    }
+
+    .title2:before {
+      content: '';
+      background: url("../../img/icon/location1.svg") center/cover no-repeat;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      margin-right: 10px;
+    }
+
+    .title3:before {
+      content: '';
+      background: url("../../img/icon/people.svg") center/cover no-repeat;
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    &__location3 {
+      font-family: Oswald, sans-serif;
+      font-size: 18px;
+      line-height: 27px;
+      max-width: 287px;
+      padding-bottom: 20px;
+
+    }
+
+    .card-contact__location3:before {
+      content: url("../../img/icon/location3.svg");
+
+    }
+
+
+  }
+
+  .card-contact:nth-child(3) {
+    max-width: 360px;
+  }
+
+
+}
+
+
+.footer{
+  background-color: rgba(196, 196, 196, 0.5);
+
+  bottom: 0;
+  width: 100%;
+
+  &__body{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &__soc{
+    display: flex;
+
+    img{
+      margin: 0 10px;
+    }
+
+  }
+
+
+}
